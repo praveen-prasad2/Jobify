@@ -21,7 +21,7 @@ const useFetch = (endpoint, query) => {
 
     try {
       const response = await axios.request(options);
-
+      // console.log(response.data.data);
       setData(response.data.data);
       setIsLoading(false);
     } catch (error) {
@@ -40,8 +40,8 @@ const useFetch = (endpoint, query) => {
     setIsLoading(true);
     fetchData();
   };
-
-  return data, error, isLoading, refetch;
+  // Return the values as an array
+  return { data, isLoading, error, refetch };
 };
 
 export default useFetch;
