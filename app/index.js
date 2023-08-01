@@ -26,22 +26,21 @@ const Home = () => {
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
           ),
-          headerTitle:"JOBIFY"
+          headerTitle: "JOBIFY",
         }}
       />
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={{
-        flex:1,
-        padding:SIZES.medium
-        }}>
-                <Welcome 
-                
-                />
+        <View
+          style={{
+            flex: 1,
+            padding: SIZES.medium,
+          }}
+        >
+          <Welcome />
 
-                <Popularjobs/>
-                <Nearbyjobs/>
-
+          <Popularjobs />
+          <Nearbyjobs />
         </View>
       </ScrollView>
     </SafeAreaView>
