@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import { Stack, useSearchParams } from "expo-router";
 import { useCallback, useState } from "react";
-import { useRouter } from "expo-router";
+ 
 
 import {
   Company,
@@ -73,7 +73,7 @@ const JobDetails = () => {
             <ScreenHeaderBtn
               iconUrl={icons.left}
               dimension="60%"
-              handlePress={() => router.back()}
+              handlePress={()=>router.back()}
             />
           ),
           headerRight: () => (
